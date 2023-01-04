@@ -1,0 +1,14 @@
+#types
+
+hc KEYWORD1
+hc595d KEYWORD1
+
+#functions
+
+begin KEYWORD2
+display KEYWORD2
+show_register KEYWORD2
+print KEYWORD2
+write KEYWORD2
+clear KEYWORD2
+setCursor KEYWORD2
