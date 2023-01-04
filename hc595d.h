@@ -32,7 +32,10 @@ class hc595d{
     void setCursor(byte place);
 
     void scroll(bool side, int speed); 
+	
     void stopScroll();
+	
+	bool ifScroll(();
 
     byte showRegister(byte char_n);
     

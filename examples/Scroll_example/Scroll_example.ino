@@ -48,14 +48,19 @@ void loop(){
     
   }
   hc.scroll(RIGHT, 250); //scroll to the right
-  while(sec<=4){
+  while(ifScroll()){ //if_scroll directive return True if display scroll
 
+  }
+  while(milis<=998){
+    
   }
   hc.scroll(LEFT, 250); //scroll to the right
-  while(sec<=4){
+  while(ifScroll()){
 
   }
-  sec=0;
+  while(milis<=998){
+    
+  }
   hc.stopScroll(); //stop scroll
   hc.setCursor(0); //set cursor on the start
 }
