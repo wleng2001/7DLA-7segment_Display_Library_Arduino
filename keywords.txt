@@ -12,3 +12,4 @@ print KEYWORD2
 write KEYWORD2
 clear KEYWORD2
 setCursor KEYWORD2
+ifScroll KEYWORD2

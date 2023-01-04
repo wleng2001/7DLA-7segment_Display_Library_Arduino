@@ -90,7 +90,7 @@ void hc595d::display(){
       if(_side==RIGHT and _start_place<_reg_len){
         _start_place++;
       }else{
-        if(_start_place-1>0 and _side==LEFT){
+        if(_start_place>0 and _side==LEFT){
           _start_place-=1;
         }else{
           _if_scroll=0;

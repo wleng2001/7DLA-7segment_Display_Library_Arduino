@@ -39,6 +39,7 @@ void setup(){
 }
 
 void loop(){
+  hc.clear();
   hc.print("Some example!!"); //add "Some text for all reg" to library register so to display
   while(milis<=998){
     
@@ -48,14 +49,14 @@ void loop(){
     
   }
   hc.scroll(RIGHT, 250); //scroll to the right
-  while(ifScroll()){ //if_scroll directive return True if display scroll
+  while(hc.ifScroll()){ //if_scroll directive return True if display scroll
 
   }
   while(milis<=998){
     
   }
   hc.scroll(LEFT, 250); //scroll to the right
-  while(ifScroll()){
+  while(hc.ifScroll()){
 
   }
   while(milis<=998){
