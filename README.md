@@ -13,6 +13,10 @@
  
  You can use methods of library!
  
+ Length of register is set up for 16 chars. If you want change it you must change number in the line in *hc595d.h* file:
+ 
+ #### `#define _reg_len 16`
+ 
  ## Methods of library
   It's list of methods:
  ```
@@ -23,6 +27,7 @@
  setCursor(byte place);
  scroll(bool side, int speed); 
  stopScroll();
+ ifScroll(); //return information about, that display is scrollin
  showRegister(byte char_n);
  ```
 ## Hardware

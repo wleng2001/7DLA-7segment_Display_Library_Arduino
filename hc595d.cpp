@@ -123,7 +123,7 @@ void hc595d::print(String text){
     }
     letter=char(text[i]);
     l_look=letter_look(letter);
-    if(l_look==B01111111 and (_l_w_seg+i)>0 and _reg[_l_w_seg-1]>128){
+    if(l_look==B01111111 and (_l_w_seg+i)>0 and _reg[_l_w_seg-1]>=128){
       _reg[_l_w_seg-1]=bitClear(_reg[_l_w_seg-1], 7);
       continue;
     }
