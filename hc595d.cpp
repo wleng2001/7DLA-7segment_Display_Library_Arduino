@@ -112,6 +112,11 @@ void hc595d::display(){
     digitalWrite(_l_pin,HIGH); 
     choose_seg++;
   }
+  //reduced brightness of the last part of display
+  digitalWrite(_l_pin,LOW); 
+  shiftOut(_dt_pin, _clk_pin, MSBFIRST, B11111111);
+  shiftOut(_dt_pin, _clk_pin, MSBFIRST, SEGMENT_SELECT[(choose_seg-1)]);
+  digitalWrite(_l_pin,HIGH); 
 }
 
 void hc595d::print(String text){
