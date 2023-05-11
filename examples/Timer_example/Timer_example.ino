@@ -37,19 +37,7 @@ void setup(){
 }
 
 void loop(){
-  hc.clear(); //clear register of the display
-  String text="";
-  if(mins<10){
-    hc.print("0");
-  }
-  hc.print(String(mins));
-  if(milis<=500){
-    hc.print(".");
-  }
-  if(sec<10){
-    hc.print("0");
-  }
-  hc.print(String(sec));
+  String text=""; //variable to save part of displayed data
 
   if(sec>=60){
     sec=0;
@@ -58,4 +46,18 @@ void loop(){
       mins=0;
     }
   }
+  
+  if(mins<10){
+    text+="0";
+  }
+  text+=String(mins);
+  if(milis<=500){
+    text+=".";
+  }
+  if(sec<10){
+    text+="0";
+  }
+  text+=String(sec);
+  hc.clear(); //clear register of the display
+  hc.print(text);
 }
