@@ -1,0 +1,11 @@
+name=7DLA-7segment_Display_Library_Arduino
+version=1.0.0
+author=Kamil Grodzki <kamilgrodzki5@gmail.com>
+maintainer=Kamil Grodzki <kamilgrodzki5@gmail.com>
+sentence=It's simple library for arduino, which allow to controll 7 segment display, which driver is 74hc595d shift register. You can print on it numbers, letters and special chars.
+paragraph=More on the github webpage
+category=Display
+url=https://github.com/wleng2001/7DLA-7segment_Display_Library_Arduino
+architectures=*
+includes=hc695d.h
+depends=arduino
