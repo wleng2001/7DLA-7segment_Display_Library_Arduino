@@ -35,9 +35,9 @@ class hc595d{
 	
     void stopScroll();
 	
-	bool ifScroll();
+	  bool ifScroll();
 
-    byte showRegister(byte char_n);
+    char showRegister(byte char_n);
     
   private:
     volatile unsigned long _last_scroll=0;

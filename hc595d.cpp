@@ -177,7 +177,7 @@ bool hc595d::ifScroll(){
 	return _if_scroll;
 }
 
-byte hc595d::showRegister(byte char_n){
+char hc595d::showRegister(byte char_n){
   if(char_n<_reg_len){
     return _reg[char_n];
   }else{
