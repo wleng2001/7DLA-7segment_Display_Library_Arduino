@@ -43,7 +43,7 @@ Clear information printed on display.
 
 Add one char to display buffer.
 
-'print(String text);'
+`print(String text);`
 
 Add *text* to buffer.
 
@@ -70,6 +70,7 @@ Return char, which is contained at the *char_n*
 
 ## Hardware
  You can see example of hardware <a href="https://www.tinkercad.com/things/94vdo8qcPSc">here</a> or use *multifunction shield*. You can see photo of hardware in TinkerCad bellow.
+ 
  ![It's photo of hardware](https://github.com/wleng2001/7DCw7-7segment_Display_Controled_with_74hc595d_by_arduino/blob/main/hardware.png)
  
  ## Software 
